@@ -25,4 +25,4 @@ Uma página que exibe as revistas e zines publicadas pela editora Tropicalversos
   - estante.php
   - funcoes.php
 - index.php
-- README.md# ddfs
+- README.md
