@@ -1,0 +1,129 @@
+body {
+    margin: 0px;
+    background:
+        radial-gradient(27% 29% at right, #0000 83%,#cbcbd8 85% 99%,#0000 101%) calc(41px/2) 41px,
+        radial-gradient(27% 29% at left, #0000 83%,#cbcbd8 85% 99%,#0000 101%) calc(41px/-2) 41px,
+        radial-gradient(29% 27% at top, #0000 83%,#cbcbd8 85% 99%,#0000 101%) 0 calc(41px/2),
+        radial-gradient(29% 27% at bottom, #0000 83%,#cbcbd8 85% 99%,#0000 101%) 0 calc(41px/-2)
+        #4d5051;
+    background-size: 82px 82px;
+}
+
+header {
+    text-align: center;
+    color: white;
+    background: black;
+    opacity: 0.8;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.container {
+    width:80%;
+    margin: auto;
+    max-width: 1200px; /* Ensures it doesn't get too wide on large screens */
+}
+
+.estante {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    align-items: start;
+}
+
+.titulo {
+    font-size: 3em;
+    font-family: "Berkshire Swash";
+    letter-spacing: 5px;
+}
+
+.data {
+    font-size: 1.8em;
+    padding: 10px 0;
+    font-family: "Delius Swash Caps";
+}
+
+.obra {
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    background: black;
+    box-shadow: 0px 0px 13px 5px rgba(0, 0, 0, 0.2);
+}
+
+.capa img {
+    width: 100%;
+    height: auto;
+}
+
+.detalhes {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    padding-top: 10px;
+    flex: 1;
+}
+
+.detalhes .titulo {
+    font-size: 2em;
+    font-family: "Berkshire Swash";
+    letter-spacing: 2px;
+    line-height: 1.1em;
+}
+
+.detalhes .data {
+    font-size: 1.2em;
+    padding: 10px 0;
+    font-family: "Delius Swash Caps";
+}
+
+.detalhes .botao-pdf a {
+    text-decoration: none;
+    font-weight: 600;
+    background: none;
+    color: white;
+    border: 1px solid white;
+    padding: 8px;
+    border-radius: 5px;
+    font-family: "Delius Swash Caps";
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .titulo {
+        font-size: 2.5em;
+    }
+
+    .estante {
+        grid-template-columns: 1fr;
+    }
+
+    .obra {
+        margin-bottom: 20px;
+    }
+
+    .detalhes .titulo {
+        font-size: 1.8em;
+    }
+
+    .detalhes .data {
+        font-size: 1em;
+    }
+
+    .detalhes .botao-pdf a {
+        padding: 6px;
+    }
+
+    .capa img { /* Ensure images do not overflow */
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+}
