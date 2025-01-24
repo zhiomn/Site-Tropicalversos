@@ -6,6 +6,8 @@ Uma página que exibe as revistas e zines publicadas pela editora Tropicalversos
 - css
   - fontes.css
   - estante.css
+- dados
+  - tabela-Obra.sql 
 - layout
   - estante.php
   - foot.php
