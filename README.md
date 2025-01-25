@@ -10,9 +10,9 @@ Uma página que exibe as revistas e zines publicadas pela editora Tropicalversos
   - tabela-Obra.sql 
 - layout
   - estante.php
-  - foot.php
-  - head.php
-  - header.php
+  - foot.html
+  - head.html
+  - header.html
 - midia
   - revista
     - capa
